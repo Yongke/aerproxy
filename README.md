@@ -1,4 +1,4 @@
-# aeproxy
+# aerproxy
 
 使用免费的Google App Engine作为反向代理, 使用电信家庭宽带提供WEB服务。
 

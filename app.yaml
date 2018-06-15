@@ -1,0 +1,10 @@
+runtime: go
+api_version: go1
+
+handlers:
+- url: /.*
+  script: _go_app
+  secure: always
+
+env_variables:
+ PROXY_PASS_HOST_PORT: 'your_ddns_domain_name:port'
