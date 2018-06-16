@@ -14,7 +14,7 @@ https://gist.github.com/pokstad/936ace2c6fc563105c17
 ## 解决方法
 
 你需要准备：
-* 自有域名， 最好是根域名， appengine分配的域名大概率会被DNS劫持
+* 自有域名， appengine分配的域名大概率会被DNS劫持
 * 家里电信需要用外网IP， 拨打10000号找人工客服可解决（随便找个要装监控之类的理由）
 * 需要一个DDNS服务(www.pubyun.com下面免费的f3322.net的就很好用)
 * 你需要申请一个免费的Google App Engine， 选在日本节点（asia-northeast1）
@@ -22,13 +22,13 @@ https://gist.github.com/pokstad/936ace2c6fc563105c17
 
 ## 使用步骤
 
-* 修改app.yaml, 将PROXY_PASS_HOST_PORT设置为你家里暴露出来的任意可访问的地址和端口，DDNS的域名
-    ```
-    PROXY_PASS_HOST_PORT: 'your_ddns_domain_name:port'
-    ```
 * 下载本项目
     ```
     git clone https://github.com/Yongke/aerproxy    
+    ```
+* 修改app.yaml, 将PROXY_PASS_HOST_PORT设置为你家里暴露出来的任意可访问的地址和端口，DDNS的域名
+    ```
+    PROXY_PASS_HOST_PORT: 'your_ddns_domain_name:port'
     ```
 * 部署该项目
     ```
