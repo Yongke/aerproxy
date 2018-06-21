@@ -8,3 +8,4 @@ handlers:
 
 env_variables:
  PROXY_PASS_HOST_PORT: 'your_ddns_domain_name:port'
+ PROXY_PASS_SCHEME: 'http'

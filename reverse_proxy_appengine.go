@@ -109,7 +109,8 @@ var hopHeaders = []string{
 func (p *ReverseProxy) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 	// The primary difference with App Engine is that we must use the urlfetch library to obtain the Transport
 	transport := &urlfetch.Transport{
-		Context: appengine.NewContext(req),
+		Context:                       appengine.NewContext(req),
+		AllowInvalidServerCertificate: true,
 	}
 
 	outreq := new(http.Request)
