@@ -38,8 +38,8 @@ https://gist.github.com/pokstad/936ace2c6fc563105c17
 * 按照控制台的提示，去你的域名服务商配置A记录
   ```
    your_domain A 216.239.32.21 # 不通， 不要这个
-   your_domain A 216.239.34.21 # 不通， 不要这个
-   your_domain A 216.239.36.21 # 速度超快
+   your_domain A 216.239.34.21 # 速度超快
+   your_domain A 216.239.36.21 # 不通， 不要这个
    your_domain A 216.239.38.21 # 速度超快
   ```
   
